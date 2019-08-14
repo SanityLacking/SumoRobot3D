@@ -170,8 +170,9 @@
      <Compile Include="Assets\ML-Agents\Scripts\Startup.cs" />
      <Compile Include="Assets\ML-Agents\Scripts\UnityAgentsException.cs" />
      <Compile Include="Assets\ML-Agents\Scripts\Utilities.cs" />
-     <Compile Include="Assets\Robots\BasicRobot\AgentScript.cs" />
      <Compile Include="Assets\Robots\BasicRobot\SumoRobot.cs" />
+     <Compile Include="Assets\Robots\BasicRobot_Ramp\AgentScript.cs" />
+     <Compile Include="Assets\Robots\BasicRobot_Ramp\SumoRobot.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RollerAcademy.cs" />
