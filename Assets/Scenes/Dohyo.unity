@@ -27,7 +27,7 @@ RenderSettings:
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: 0.5
+  m_HaloStrength: 0.425
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,7 +96,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 71ecf03b945869e4b9059e61cd288159,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -288,7 +289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48052451}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 1.158, y: 5.76, z: -2.005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -379,6 +380,21 @@ PrefabInstance:
     - target: {fileID: 2876197246131273163, guid: 91c4b14dc689ab4438e1e07cef7c8a5c,
         type: 3}
       propertyPath: PlayerControled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876197246131273163, guid: 91c4b14dc689ab4438e1e07cef7c8a5c,
+        type: 3}
+      propertyPath: setStartLocation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876197246131273163, guid: 91c4b14dc689ab4438e1e07cef7c8a5c,
+        type: 3}
+      propertyPath: PlayerControled_1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876197246131273163, guid: 91c4b14dc689ab4438e1e07cef7c8a5c,
+        type: 3}
+      propertyPath: PControled_1
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -808,6 +824,31 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2876197246131273163, guid: 91c4b14dc689ab4438e1e07cef7c8a5c,
+        type: 3}
+      propertyPath: setStartLocation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876197246131273163, guid: 91c4b14dc689ab4438e1e07cef7c8a5c,
+        type: 3}
+      propertyPath: PlayerControled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876197246131273163, guid: 91c4b14dc689ab4438e1e07cef7c8a5c,
+        type: 3}
+      propertyPath: PlayerControled_2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876197246131273163, guid: 91c4b14dc689ab4438e1e07cef7c8a5c,
+        type: 3}
+      propertyPath: PlayerControled_1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876197246131273163, guid: 91c4b14dc689ab4438e1e07cef7c8a5c,
+        type: 3}
+      propertyPath: PControled_2
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c4b14dc689ab4438e1e07cef7c8a5c, type: 3}
 --- !u!1 &1897269181
@@ -856,6 +897,7 @@ MonoBehaviour:
   broadcastHub:
     broadcastingBrains:
     - {fileID: 11400000, guid: b026935651e187444b3366110e8eae2f, type: 2}
+    - {fileID: 11400000, guid: a8fdfa6965c94724698f19df6966e451, type: 2}
     _brainsToControl: []
   maxSteps: 0
   trainingConfiguration:
