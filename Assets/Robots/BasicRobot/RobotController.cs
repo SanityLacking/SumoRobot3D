@@ -16,8 +16,11 @@ public class RobotController : MonoBehaviour
     public OpticalSensor[] OpticalSensors;
     public float Force;
     // public MotorController MC;
-    public Vector3 startLocation;
     public bool PlayerControled;
+
+    public bool setStartLocation;
+    private Vector3 startLocation;
+    private Vector3 startRotation;
     #endregion
     // Start is called before the first frame update
     void Start()
@@ -27,9 +30,11 @@ public class RobotController : MonoBehaviour
         MagneticDownforce = 1000;
         m_Speed = 0.0f;
 
-        if (startLocation == m_Rigidbody.transform.position){
+        // update the reset location of the robot, if not checked, robot will default to zero/zero
+        if (setStartLocation){
             Debug.Log("updating start position");
             startLocation = m_Rigidbody.transform.position;
+            startRotation = m_Rigidbody.transform.eulerAngles;
         }
 
 
@@ -119,10 +124,14 @@ public class RobotController : MonoBehaviour
         if (this.transform.position.y < 0)
         {
             // If the Agent fell, zero its momentum
-            
+            Debug.Log("reset Bot");
             m_Rigidbody.angularVelocity = Vector3.zero;
             m_Rigidbody.velocity = Vector3.zero;
+            m_Speed =0;
+            SetSpeed(m_Speed);
+            // m_Acceleration = 0;
             m_Rigidbody.transform.position = startLocation;
+            m_Rigidbody.transform.eulerAngles = startRotation;
         }
 
 
