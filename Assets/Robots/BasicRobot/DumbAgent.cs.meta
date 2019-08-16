@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Robots/BasicRobot/SumoRobot.cs.meta
 guid: 3f16bfbec1dea4d429150e9b721d4009
+=======
+guid: 2873c14c6e0e46a43b2d59f295aa5171
+>>>>>>> upstream/master:Assets/Robots/BasicRobot/DumbAgent.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
